@@ -14,7 +14,7 @@ int main(){
 			numt = omp_get_num_threads();
 		}
 
-		#pragma omp barrier  // all threads must hit this barrier before goin forward
+		#pragma omp barrier  // all threads must hit this barrier before going forward
 
 		printf("[%d %d %d]\n", omp_get_thread_num(), tid, numt);
 	}
